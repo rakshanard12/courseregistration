@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+  let y = document.forms["myForm"]["email"].value;
+  if (y == "") {
+    alert("email must be filled");
+    return false;
+  }
+  let z = document.forms["myForm"]["no"].value;
+  if{
+    z.length!=10;
+  }
+}
+
+
+</script>
+</head>
+<body>
+  <fieldset style="align-items: center;">
+    <h2 style="text-align: center;"><em>Course Registration</em></h2>
+<form name="myForm" action="form.html" onsubmit="return validateForm()" method="get">
+  Name  : <input type="text" name="fname"><br><br>
+  Email : <input type="email" name="email"><br><br>
+  Ph no : <input type="text" name="no"><br><br>
+  Age : <input type="text" name="age"><br><br>
+  Year:<br>
+  <input type="radio" name="fradio" value="one" required>
+  <label for="one">I</label><br>
+  <input type="radio" name="fradio" value="two">
+  <label for="two">II</label><br>
+  <input type="radio" name="fradio" value="three">
+  <label for="three">III</label><br>
+  <input type="radio" name="fradio" value="four">
+  <label for="four">IV</label><br>
+  <br>
+  Department:
+  <select >
+  <option>IT</option>
+  <option>CSE</option>
+  <option>ECE</option>
+  <option>EEE</option>
+  </select>
+  <br>
+  <br>
+  Coarse:
+  <br>
+  <input type="checkbox" name="fcheck" >HTML
+  <br>
+  <input type="checkbox" name="fcheck" >CSS
+  <br>
+  <input type="checkbox" name="fcheck" >Bootstrap
+  <br>
+  <input type="checkbox" name="fcheck" >JS
+  <br>
+
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
